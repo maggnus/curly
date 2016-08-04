@@ -1,6 +1,10 @@
 import sbt._
 import Keys._
 
+import sbtassembly.Plugin.{MergeStrategy, assemblySettings, defaultMergeStrategy}
+import sbtassembly.Plugin.AssemblyKeys.{assembly, mergeStrategy}
+import sbtassembly.AssemblyUtils
+
 object AppBuild extends Build {
 
   val _version = "0.5.7-SNAPSHOT"
